@@ -56,9 +56,10 @@ export default function Reviews() {
 				<CarouselPrevious className="hidden xl:inline-flex" />
 				<CarouselNext className="hidden xl:inline-flex" />
 			</Carousel>
-			<div className="mt-6 flex items-center justify-center gap-x-2 text-sm">
+			<div className="mt-6 flex items-center justify-center gap-x-3 text-sm">
 				{scrollSnaps.map((_, index) => (
 					<button
+						aria-label={`Change to ${index + 1} slide`}
 						key={index}
 						className={`size-3 cursor-pointer rounded-full ${
 							current === index ? "bg-gray-500" : "bg-muted"
