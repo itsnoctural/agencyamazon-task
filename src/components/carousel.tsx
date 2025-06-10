@@ -60,7 +60,7 @@ export default function Reviews() {
 				{scrollSnaps.map((_, index) => (
 					<button
 						key={index}
-						className={`size-3 rounded-full ${
+						className={`size-3 cursor-pointer rounded-full ${
 							current === index ? "bg-gray-500" : "bg-muted"
 						}`}
 						onClick={() => api?.scrollTo(index)}
