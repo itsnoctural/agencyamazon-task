@@ -39,7 +39,7 @@ export default function Reviews() {
 					loop: true,
 				}}
 				setApi={setApi}
-				className="max-w-screen-lg"
+				className="max-w-287"
 			>
 				<CarouselContent>
 					{reviews.map((review, index) => {

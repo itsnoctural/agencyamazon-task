@@ -11,11 +11,12 @@ export function ReviewCard(props: IReview) {
 	return (
 		<div className="border-border bg-background flex h-128 flex-col rounded-xl border p-6">
 			<Image
-				className="mb-4 max-h-24 w-fit"
+				className="mb-4 h-24 w-64"
 				src={props.brandUrl}
 				alt=""
 				width={170}
 				height={100}
+				priority
 			/>
 
 			<div className="flex h-full flex-col justify-between">
