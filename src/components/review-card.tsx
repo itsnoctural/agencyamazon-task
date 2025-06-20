@@ -9,7 +9,7 @@ const staatliches = Staatliches({
 
 export function ReviewCard(props: IReview) {
 	return (
-		<div className="border-border bg-background flex h-128 flex-col rounded-xl border p-6">
+		<div className="border-border bg-background flex h-128 flex-col rounded-xl border p-6 select-none">
 			<Image
 				className="mb-4 h-24 w-64"
 				src={props.brandUrl}
